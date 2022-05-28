@@ -206,7 +206,6 @@ body {
 
 .advantage {
     padding-top: 94px;
-    padding-bottom: 94px; 
 }
 
 .advantage-list {
@@ -309,7 +308,7 @@ body {
 }
 .team-title {
     display: block;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -365,13 +364,13 @@ body {
    
 }
 
-.footer-item .item{
+.footer-item {
     display: block;
     margin-bottom: 9px;
 }
 
-.footer-list {
-    display: block;
+.footer-item:last-child {
+    margin-bottom: 0;
 }
 
 .footer-style {
@@ -403,15 +402,16 @@ body {
 .portfolio-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 }
 
 .portfolio-btn {
     display: inline-block;
+    border: none;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
-    margin-right: 8px;
 
     font-family: inherit;
     font-weight: 500;
@@ -423,7 +423,11 @@ body {
     border-radius: 4px;
 }
 
-.portfolio-btn:not(:last-child) {
+.portfolio-list-btn {
+    margin-right: 8px;
+}
+
+.portfolio-list-btn:last-child {
     margin-right: 0;
 }
 
@@ -440,8 +444,8 @@ body {
 
 .card-list .card-item {
     width: 370px;
-    margin-top: 30px;
     margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .card-list .card-item:nth-child(3n) {
@@ -454,6 +458,7 @@ body {
 
 
 .card-title {
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
